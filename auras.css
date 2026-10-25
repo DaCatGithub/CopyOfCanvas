@@ -9,11 +9,11 @@ label {
 .icon{margin-left: 15px;
     text-decoration: none;}
 ol {list-style-type: none;}
-.left a, .top a {color: rgb(12, 83, 143);} .left a :visited, .top a{color:rgb(12, 83, 143);}
+.left a, .top a {color: rgb(12, 83, 143);} 
+.left a :visited, .top a{color:rgb(12, 83, 143);}
 .Attempts {position: relative;
     display: inline-block;}
-.LeftnRight {text-align: left;}
 .box a, .box a :visited, .box h4 {color:white;
 text-decoration: none;}
 .box{width:fit-content;background-color: rgb(46, 64, 83);}
-.Everything, {text-align:left;}
+.Everything {margin:0px;}
