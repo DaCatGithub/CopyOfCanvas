@@ -1,5 +1,6 @@
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin:0; padding:0;}
 .Right{margin-left: 10px;}
 label {
     border-style: solid;
@@ -15,5 +16,9 @@ ol {list-style-type: none;}
     display: inline-block;}
 .box a, .box a :visited, .box h4 {color:white;
 text-decoration: none;}
-.box{width:fit-content;background-color: rgb(46, 64, 83);}
-.Everything {margin:0px;}
+.Everything {margin:0px; border-width: 0;}
+.leftbox {background-color: rgb(46, 64, 83);}
+h1, h2, h4 {
+    font-weight: normal;
+}
+.box {width: 85px}
