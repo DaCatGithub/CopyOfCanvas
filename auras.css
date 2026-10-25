@@ -16,9 +16,19 @@ ol {list-style-type: none;}
     display: inline-block;}
 .box a, .box a :visited, .box h4 {color:white;
 text-decoration: none;}
-.Everything {margin:0px; border-width: 0;}
+.Everything {margin:0px;height: 100vh}
 .leftbox {background-color: rgb(46, 64, 83);}
-h1, h2, h4 {
-    font-weight: normal;
-}
-.box {width: 85px}
+h1, h2, h4 {font-weight: normal;}
+.box {width: 85px;
+height: 100%;}
+.toprow, .toprow td 
+{height: 50px; vertical-align:middle;
+max-height:50px}
+.Everything td {vertical-align:top;}
+.points{margin-left: 50px;}
+.top a{text-decoration: none;}
+.Detail{width: 80px;}
+.left{margin-right:100px;}
+.arrow{margin-left:5px; margin-right:5px; color: rgb(107, 122, 132);}
+.reader{margin-left:370px;
+margin-top:15px;}
