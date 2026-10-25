@@ -15,10 +15,5 @@ ol {list-style-type: none;}
 .LeftnRight {text-align: left;}
 .box a, .box a :visited, .box h4 {color:white;
 text-decoration: none;}
-.box{
-
-    width:fit-content;
-background-color: rgb(46, 64, 83);}
-.Everything th, .Everything td{border: 3px;
-border-style:solid;
-text-align:left;}
+.box{width:fit-content;background-color: rgb(46, 64, 83);}
+.Everything th, .Everything td{text-align:left;}
