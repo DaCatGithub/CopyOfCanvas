@@ -16,4 +16,4 @@ ol {list-style-type: none;}
 .box a, .box a :visited, .box h4 {color:white;
 text-decoration: none;}
 .box{width:fit-content;background-color: rgb(46, 64, 83);}
-.Everything th, .Everything td{text-align:left;}
+.Everything, {text-align:left;}
