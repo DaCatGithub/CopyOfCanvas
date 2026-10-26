@@ -10,15 +10,15 @@ label {
 .icon{margin-left: 15px;
     text-decoration: none;}
 ol {list-style-type: none;}
-.left a, .top a {color: rgb(12, 83, 143);} 
-.left a :visited, .top a{color:rgb(12, 83, 143);}
+.left a,.left a:visited {color: rgb(12, 83, 143);} 
+.top a{text-decoration: none;}
 .Attempts {position: relative;
     display: inline-block;}
 .box a, .box a :visited, .box h4 {color:white;
 text-decoration: none;}
 .Everything {margin:0px;height: 100vh}
 .leftbox {background-color: rgb(46, 64, 83);}
-h1, h2, h4 {font-weight: normal;}
+h1, h2, h3, h4 {font-weight: normal;}
 .box {width: 85px;
 height: 100%;}
 .toprow, .toprow td 
@@ -26,9 +26,29 @@ height: 100%;}
 max-height:50px}
 .Everything td {vertical-align:top;}
 .points{margin-left: 50px;}
-.top a{text-decoration: none;}
 .Detail{width: 80px;}
 .left{margin-right:100px;}
 .arrow{margin-left:5px; margin-right:5px; color: rgb(107, 122, 132);}
 .reader{margin-left:370px;
 margin-top:15px;}
+.toptext a, .toptext a:visited {color: rgb(12, 83, 143); text-decoration:none}
+code {
+    background-color: rgb(240, 242, 245); 
+    color: rgb(199, 37, 78);              
+    font-family: monospace;               
+    font-size: 90%;
+    padding: 2px 6px;                    
+    border: 1px solid rgb(220, 224, 230); 
+    border-radius: 4px;                   
+}
+.numbre li {list-style-type:decimal;}
+.circle li {list-style-type:circle; margin-left:30px}
+.text {
+    background-color: rgb(240, 242, 245); 
+    color: rgb(0, 0, 0);              
+    font-family: monospace;               
+    font-size: 90%;
+    padding: 2px 6px;                    
+    border: 1px solid rgb(220, 224, 230); 
+    border-radius: 4px;                   
+}
