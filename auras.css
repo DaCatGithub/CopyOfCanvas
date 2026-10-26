@@ -52,3 +52,15 @@ code {
     border: 1px solid rgb(220, 224, 230); 
     border-radius: 4px;                   
 }
+.kienthuc, .kienthuc td, .kienthuc th {
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse:collapse;
+    padding:5px; vertical-align: center;
+}
+.kienthuc{width:350px}
+.the {width:130px}
+.ball{list-style-type:disc;}
+.buoc{background-color: rgb(246, 237, 202);
+width:fit-content;}
+.submit{color:rgb(12, 83, 143);}
+.submit2{color:rgb(12, 83, 143); margin-}
