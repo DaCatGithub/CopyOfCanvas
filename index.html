@@ -53,11 +53,12 @@
     <li><a href="#">Attempt 2</a></li>
   </ul>
 </details>
+<br>
     </div>
     <details open>
     <summary class="Detail">Details</summary>
     <p>
-<h2>NHIỆM VỤ THỰC HÀNH</h2>
+<h2 class="buoc">NHIỆM VỤ THỰC HÀNH</h2>
 <h4><b>Chủ đề: THIẾT KẾ TRANG WEB "GÓC HỌC TẬP CỦA EM"</b></h4>
 <h4>Em hãy thực hiện theo hướng dẫn bên dưới để tạo một trang web giới thiệu góc học tập cá nhân.</h4>
 <h3>Bước 1. Tạo thư mục và file</h3>
@@ -71,7 +72,7 @@
   <li><code>style.css</code>: Viết mã CSS trang trí trang web.</li>
 </ol>
 <b>Lưu ý:</b> Hai file phải nằm trong cùng một thư mục để liên kết CSS hoạt động.
-<h2>Bước 2. Viết mã HTML</h2>
+<h2 class="buoc">Bước 2. Viết mã HTML</h2>
 Mở file<code>index.html</code>, nhập đoạn mã sau:
 <pre><p class="text">
 &lt;!DOCTYPE html&gt;
@@ -187,11 +188,208 @@ Mở file<code>index.html</code>, nhập đoạn mã sau:
     &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
+</p></pre>
 </p>
 <b>Giải thích kiến thức cần nhớ:</b>
+<table class="kienthuc">
+  <tr><th class="the">Thẻ HTML</th><th>Chức năng</th></tr>
+    <tr>
+    <td><code>h1</code>,<code>h2</code></td>
+    <td>tạo tiêu đề</td>
+    </tr>
+    <tr>
+      <td><code>p</code></td>
+      <td>Tạo đoạn văn</td>
+      <tr>
+        <td><code>ul</code>,<code>li</code></td>
+        <td>Danh sách không thứ tự</td>
+      </tr>
+    </tr>
+    <tr>
+      <td><code>ol</code>,<code>li</code></td><td>Danh sách có thứ tự</td>
+    </tr>
+    <tr>
+      <td><code>table</code>, <code>tr</code>, <code>th</code>, <code>td</code></td><td>Tạo bảng</td>
+    </tr>
+    <tr>
+      <td><code>img</code></td><td>Chèn hình ảnh, <code>alt</code> mô tả ảnh</td>
+    </tr>
+    <tr>
+      <td><code>iframe</code></td><td>Nhúng video YouTube</td>
+    </tr>
+    <tr>
+      <td><code>audio controls</code></td><td>Tạo trình phát âm thanh</td>
+    </tr>
+    <tr>
+      <td><code>a</code></td><td>Tạo liên kết</td>
+    </tr>
+    <tr><td><code>form</code>, <code>input</code>, <code>textarea</code></td><td>Tạo biểu mẫu</td></tr>
+    <tr><td><code>button</code></td><td>Tạo nút bấm</td></tr>
+</table>
+<b>Chú ý:</b>
+<ol class="ball">
+  <li><code>target="_blank"</code> giúp liên kết mở ở tab mới.</li>
+  <li>Địa chỉ video YouTube nhúng phải có dạng <code>/embed/VIDEO_ID</code>.</li>
+  <li>Font Awesome dùng để hiển thị các biểu tượng ngôi sao và phong bì.</li>
+  <li>Các thành phần tải từ Internet cần có kết nối mạng.</li>
+  <li>Nút <b>Gửi</b> chỉ minh họa biểu mẫu, chưa gửi dữ liệu đến máy chủ.</li>
+</ol>
+<h2 class="buoc">Bước 3. Viết mã CSS</h2>
+Mở file <code>style.css</code> và nhập đoạn mã:
+
+<pre><p class="text">
+/* Định dạng toàn trang */
+body {
+    background-color: #eef2ff;
+    color: #333333;
+    margin: 20px;
+    font-family: Arial;
+}
+
+/* Định dạng khung nội dung */
+.khung {
+    background-color: white;
+    width: 800px;
+    padding: 20px;
+    margin: 0 auto;
+    border: 2px solid #cccccc;
+    border-radius: 12px;
+}
+
+/* Định dạng tiêu đề */
+h2 {
+    color: blue;
+}
+
+.noibat {
+    color: red;
+}
+
+#tieude {
+    color: darkblue;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Định dạng bảng */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+}
+
+/* Định dạng hình ảnh */
+img {
+    width: 480px;
+    height: 240px;
+    border-radius: 10px;
+}
+
+/* Định dạng liên kết */
+a {
+    color: green;
+    text-decoration: none;
+}
+
+/* Định dạng biểu mẫu */
+input, textarea {
+    padding: 8px;
+    margin: 5px;
+}
+
+button {
+    padding: 8px;
+    margin: 5px;
+}
+</p></pre>
+<b>Giải thích kiến thức CSS:</b>
+<ol class="ball">
+  <li><code>body</code>, <code>h2</code>, <code>img</code>: Selector theo tên thẻ.</li>
+  <li><code>.khung</code>, <code>.noibat</code>: Selector theo class.</li>
+  <li><code>#tieude</code>: Selector theo id.</li>
+  <li><code>color</code>: Màu chữ.</li>
+  <li><code>background-color</code>: Màu nền.</li>
+  <li><code>border</code>: Đường viền.</li>
+  <li><code>border-radius</code>: Bo tròn góc.</li>
+  <li><code>padding</code>: Khoảng cách bên trong.</li>
+  <li><code>width</code>, <code>height</code>: Chiều rộng và chiều cao.</li>
+  <li><code>font-weight</code>: Độ đậm chữ.</li>
+  <li><code>text-align</code>: Căn chỉnh chữ.</li>
+  <li><code>text-decoration</code>: Trang trí văn bản hoặc liên kết.</li>
+</ol>
+<b>Kiến thức quan trọng về độ ưu tiên CSS:</b>
+<h4>Trong bài thực hành, tiêu đề có đồng thời:</h4>
+<p class="text">&lt;h1 id="tieude" class="noibat"&gt;&lt;/h1&gt;</p>
+<h4>CSS quy định:</h4>
+<pre><p class="text">
+.noibat {
+    color: red;
+}
+
+#tieude {
+    color: darkblue;
+}
+</p></pre>
+<h4><b>Kết quả: </b>Tiêu đề có màu xanh đậm, không phải màu đỏ.</h4>
+<h4><b>Vì sao?</b> Vì selector theo <code>id</code> có độ ưu tiên cao hơn selector theo <code>class</code>.</h4>
+<h2 class="buoc">Bước 4. Chạy và kiểm tra sản phẩm</h2>
+<ol class="numbre">
+  <li>Nhấn <code>Ctrl + S</code> để lưu cả hai file.</li>
+  <li>Mở file <code>index.html</code> bằng trình duyệt Chrome hoặc Edge.</li>
+  <li>Quan sát trang web vừa tạo.</li>
+  <li>Kiểm tra hình ảnh, bảng, danh sách, video, âm thanh, biểu mẫu và màu sắc.</li>
+  <li>Nếu trang web chưa có màu nền hoặc khung trắng, hãy kiểm tra dòng liên kết <code>style.css</code> và tên file CSS.</li>
+</ol>
+<h2 class="buoc">Bước 5. Tự thực hành chỉnh sửa</h2>
+<h4>Sau khi trang web hoạt động, em phải tự thực hiện <b>4 yêu cầu:</b></h4>
+<ol class="numbre">
+  <li>Thay nội dung giới thiệu bằng thông tin học tập của bản thân.</li>
+  <li>Thay đổi ít nhất 2 môn học yêu thích hoặc hoạt động học tập.</li>
+  <li>Thêm ít nhất 1 hàng mới vào bảng thời gian biểu.</li>
+  <li>Đổi màu nền trang web và màu tiêu đề bằng CSS.</li>
+</ol>
+<h4><b>Yêu cầu:</b> Tự thực hiện các chỉnh sửa, lưu file và tải lại trang web để quan sát sự thay đổi.</h4>
+<h2 class="buoc">CHECKLIST TỰ ĐÁNH GIÁ</h2>
+<h4>Trước khi nộp bài, kiểm tra:</h4>
+<ol class="ball">
+  <li>Có cấu trúc HTML chuẩn và tiêu đề trang.</li>
+  <li>Có tiêu đề, đoạn văn.</li>
+  <li>Có danh sách <code>ul</code> và <code>ol</code>.</li>
+  <li>Có bảng với thẻ <code>th</code></li>
+  <li>Có hình ảnh và thuộc tính <code>alt</code>.</li>
+  <li>Có video YouTube bằng <code>iframe</code>.</li>
+  <li>Có thẻ <code>audio controls</code>.</li>
+  <li>Có liên kết ngoài mở tab mới.</li>
+  <li>Có form liên hệ đầy đủ.</li>
+  <li>Sử dụng file CSS riêng.</li>
+  <li>Có selector theo tag, class và id.</li>
+  <li>Hiểu độ ưu tiên của <code>li</code> so với <code>class</code>.</li>
+  <li>Có các thuộc tính CSS cơ bản.</li>
+  <li>Liên kết CSS thành công.</li>
+  <li>Có ít nhất 2 biểu tượng Font Awesome.</li>
+</ol>
+<h2 class="buoc">SẢN PHẨM NỘP TRÊN CANVAS</h2>
+<h4>Sau khi hoàn thành thực hành:</h4>
+<ol class="numbre">
+  <li>Chụp màn hình trang web đã chạy trên trình duyệt, thể hiện rõ các phần nội dung. Có thể chụp nhiều ảnh nếu trang web dài.</li>
+  <li>Chụp màn hình hai file <code>index.html</code> và <code>style.css</code> đang mở trong Visual Studio Code để minh chứng đã thực hiện mã nguồn.</li>
+  <li>Tải các ảnh chụp lên Assignment trên Canvas và nhấn <b>Submit Assignment.</b></li>
+</ol>
+<h4><b>Không cần nộp file HTML, CSS hay file ZIP. Chỉ cần nộp ảnh chụp màn hình.</b></h4>
+<h2 class="buoc">HOÀN THÀNH HOẠT ĐỘNG</h2>
+<h4>Em đã hoàn thành khi trang web hiển thị đúng, thực hiện đủ 4 yêu cầu chỉnh sửa ở Bước 5 và nộp ảnh chụp màn hình trên Canvas.</h4>
+<h4><b>Lưu ý:</b> Hãy cố gắng hiểu chức năng của từng thẻ HTML và thuộc tính CSS thay vì chỉ sao chép mã. Trong bài kiểm tra thực hành, em cần tự viết và chỉnh sửa mã theo yêu cầu đề bài.</h4>
 </p>
 </details>
+<br>
+<b>Choose a submission type</b>
+<table class="sub">
+  <tr>
+<td><button class="submit">Text</button></td>
+<td><button class="submit2">Upload</button></td>
+<td><button class="submit2">More</button> </td>
+</tr>
+</table>
   </td>
   </tr>
 </table>
