@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,6 +60,136 @@
 <h2>NHIỆM VỤ THỰC HÀNH</h2>
 <h4><b>Chủ đề: THIẾT KẾ TRANG WEB "GÓC HỌC TẬP CỦA EM"</b></h4>
 <h4>Em hãy thực hiện theo hướng dẫn bên dưới để tạo một trang web giới thiệu góc học tập cá nhân.</h4>
+<h3>Bước 1. Tạo thư mục và file</h3>
+<ol class="numbre">
+  <li>Mở Visual Studio Code.</li>
+  <li>Tạo thư mục có tên <code>OnTapHTML</code>.</li>
+  <li>Tạo hai file trong thư mục:</li>
+</ol>
+<ol class="circle">
+  <li><code>index.html</code>: Viết nội dung HTML.</li>
+  <li><code>style.css</code>: Viết mã CSS trang trí trang web.</li>
+</ol>
+<b>Lưu ý:</b> Hai file phải nằm trong cùng một thư mục để liên kết CSS hoạt động.
+<h2>Bước 2. Viết mã HTML</h2>
+Mở file<code>index.html</code>, nhập đoạn mã sau:
+<pre><p class="text">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="vi"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport"
+          content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Góc học tập của em&lt;/title&gt;
+
+    &lt;link rel="stylesheet" href="style.css"&gt;
+
+    &lt;link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="khung"&gt;
+
+        &lt;h1 id="tieude" class="noibat"&gt;
+            &lt;i class="fa-solid fa-star"&gt;&lt;/i&gt;
+            GÓC HỌC TẬP CỦA EM
+        &lt;/h1&gt;
+
+        &lt;h2&gt;1. Giới thiệu&lt;/h2&gt;
+        &lt;p&gt;
+            Xin chào! Em là học sinh lớp 12.
+            Đây là trang web giới thiệu góc học tập
+            và những hoạt động yêu thích của em.
+        &lt;/p&gt;
+
+        &lt;h2&gt;2. Các môn học yêu thích&lt;/h2&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Tin học&lt;/li&gt;
+            &lt;li&gt;Toán học&lt;/li&gt;
+            &lt;li&gt;Tiếng Anh&lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;h2&gt;3. Kế hoạch học tập&lt;/h2&gt;
+        &lt;ol&gt;
+            &lt;li&gt;Ôn tập bài cũ&lt;/li&gt;
+            &lt;li&gt;Làm bài tập&lt;/li&gt;
+            &lt;li&gt;Chuẩn bị bài mới&lt;/li&gt;
+        &lt;/ol&gt;
+
+        &lt;h2&gt;4. Thời gian biểu&lt;/h2&gt;
+        &lt;table&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Thứ&lt;/th&gt;
+                &lt;th&gt;Môn học&lt;/th&gt;
+                &lt;th&gt;Thời gian&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Thứ hai&lt;/td&gt;
+                &lt;td&gt;Tin học&lt;/td&gt;
+                &lt;td&gt;19:00&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Thứ ba&lt;/td&gt;
+                &lt;td&gt;Toán&lt;/td&gt;
+                &lt;td&gt;19:30&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+
+        &lt;h2&gt;5. Hình ảnh&lt;/h2&gt;
+        &lt;img src="https://placehold.co/800x400/png?text=Goc+Hoc+Tap"
+             alt="Hình ảnh góc học tập"&gt;
+
+        &lt;h2&gt;6. Video học tập&lt;/h2&gt;
+        &lt;iframe width="480" height="270"
+                src="https://www.youtube.com/embed/qz0aGYrrlhU"
+                title="Video học HTML"
+                allowfullscreen&gt;
+        &lt;/iframe&gt;
+
+        &lt;h2&gt;7. Âm thanh&lt;/h2&gt;
+        &lt;audio controls&gt;
+            &lt;source
+                src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
+                type="audio/mpeg"&gt;
+        &lt;/audio&gt;
+
+        &lt;h2&gt;8. Website tham khảo&lt;/h2&gt;
+        &lt;a href="https://www.w3schools.com"
+           target="_blank" rel="noopener noreferrer"&gt;
+            Truy cập W3Schools
+        &lt;/a&gt;
+
+        &lt;h2&gt;
+            &lt;i class="fa-solid fa-envelope"&gt;&lt;/i&gt;
+            9. Liên hệ
+        &lt;/h2&gt;
+
+        &lt;form&gt;
+            &lt;label for="hoten"&gt;Họ tên:&lt;/label&gt;
+            &lt;input type="text" id="hoten"
+                   name="name" required&gt;
+            &lt;br&gt;
+
+            &lt;label for="email"&gt;Email:&lt;/label&gt;
+            &lt;input type="email" id="email"
+                   name="email" required&gt;
+            &lt;br&gt;
+
+            &lt;label for="loinhan"&gt;Lời nhắn:&lt;/label&gt;
+            &lt;textarea id="loinhan"
+                      name="message"&gt;&lt;/textarea&gt;
+            &lt;br&gt;
+
+            &lt;button type="submit"&gt;Gửi&lt;/button&gt;
+            &lt;button type="reset"&gt;Nhập lại&lt;/button&gt;
+        &lt;/form&gt;
+
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+</p>
+<b>Giải thích kiến thức cần nhớ:</b>
 </p>
 </details>
   </td>
